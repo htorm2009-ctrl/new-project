@@ -1,0 +1,35 @@
+/** @format */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+img {
+	max-width: 100%;
+	display: block;
+}
+button {
+	cursor: pointer;
+	border: none;
+	outline: none;
+	background: none;
+}
+input:focus,
+textarea:focus {
+	outline: none;
+}
+.container {
+	max-width: 80%;
+	margin: 0 auto;
+	padding: 0 20px;
+}
