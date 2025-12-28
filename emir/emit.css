@@ -53,4 +53,134 @@
         }
     }
 }
+#section1 {
+    color: white;
+    margin-top: 100px;
+}
+
+    h2 {
+
+        font-size: 64px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    p {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        color: rgb(160, 156, 156);
+    }
+
+    .four {
+        color: white;
+        background: rgba(42, 2, 74, 0);
+        border: solid 2px rgb(42, 2, 74);
+        border-radius: 25px;
+        width: 150px;
+        height: 50px;
+        margin-right: 20px;
+        transition: 0.7s ease-in-out;
+    }
+
+    .four:hover {
+        background: rgba(104, 27, 167, 0.5);
+        cursor: pointer;
+        transform: scale(1.25);
+    }
+
+    .one {
+        color: rgb(31, 2, 54);
+        background: white;
+        border: solid 2px rgb(42, 2, 74);
+        border-radius: 25px;
+        width: 150px;
+        height: 50px;
+        margin-right: 20px;
+        transition: 0.7s ease-in-out;
+    }
+
+    .one:hover {
+        background: rgba(104, 27, 167, 0.5);
+        color: white;
+        cursor: pointer;
+        transform: scale(1.25);
+    }
+
+    .gradient-outline {
+        font-size: 64px;
+        font-weight: bold;
+        color: #151521;
+        background: linear-gradient(90deg, #ff00cc, #3333ff);
+        -webkit-background-clip: text;
+        text-shadow: 0 0 2px #fff, 0 0 4px #ff00cc, 0 0 6px #3333ff;
+    }
+
+    .photo {
+        display: flex;
+        align-items: flex-end;
+        gap: 20px;
+        padding-left: 100px;
+        margin-bottom: 30px;
+        margin-top: 100px;
+
+        img {
+
+            border-radius: 20px;
+        }
+    }
+
+p {
+    color: rgba(84, 84, 84, 0.438);
+}
+
+.sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    sec1{
+        display: flex;
+        gap: 50px;
+    }
+    .photo {
+        
+        .tt {
+            width: 650px;
+            height: 475px;
+            position: absolute;
+            left: 700px;
+            right: 0;
+            margin-bottom: 100px;
+        }
+        .hh {
+            width: 600px;
+            height: 600px;
+            position: absolute;
+            left: 700px;
+            right: 0;
+        }
+        .jj {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            left: 1100px;
+            right: 0;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+                }
+                .jj:hover {
+                    transform: scale(1.1);
+                    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+                    }
+        .kk {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 1150px;
+            right: 0;
+            margin-bottom: 350px;
+        }
+    }
+}
+
 
