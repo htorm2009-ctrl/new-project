@@ -21,7 +21,6 @@ body {
     margin-bottom: 24px;
 }
 
-/* Auction cards */
 .auction-row {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -92,7 +91,6 @@ body {
     font-size: 11px;
 }
 
-/* Bestseller */
 .bestseller-row {
     display: flex;
     gap: 22px;
