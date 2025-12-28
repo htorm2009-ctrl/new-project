@@ -1,121 +1,146 @@
-box-sizing{
-    margin: 0;
-    padding: 0;
+/**
+ * Сброс стилей
+ *
+ * @format
+ */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    background: radial-gradient(circle at top, #1b1f3b, #0b0d1a 60%);
-    color: #fff;
+	font-family: 'Inter', sans-serif;
+	background: radial-gradient(circle at top, #1b1f3b, #0b0d1a 60%);
+	color: #fff;
 }
 
+/* Контейнер */
 .container {
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 40px 20px;
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 40px 20px;
 }
 
-.section-title {
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 24px;
+/* Заголовки секций */
+.container .section-title {
+	font-size: 28px;
+	font-weight: 700;
+	margin-bottom: 24px;
 }
 
-.auction-row {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 24px;
-    margin-bottom: 60px;
+/* Ряд аукционов */
+.container .auction-row {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+	gap: 24px;
+	margin-bottom: 60px;
 }
 
-.card {
-    background: #2a2d45;
-    border-radius: 20px;
-    padding: 16px;
-    position: relative;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+/* Карточка аукциона */
+.container .auction-row .card {
+	background: #2a2d45;
+	border-radius: 20px;
+	padding: 16px;
+	position: relative;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
-.card img {
-    width: 100%;
-    border-radius: 16px;
-    margin-bottom: 12px;
+/* Картинка карточки */
+.container .auction-row .card img {
+	width: 100%;
+	border-radius: 16px;
+	object-fit: cover;
+	margin-bottom: 12px;
 }
 
-.like {
-    position: absolute;
-    top: 14px;
-    right: 14px;
-    background: #000;
-    padding: 6px 10px;
-    border-radius: 12px;
-    font-size: 12px;
+/* Лайк */
+.container .auction-row .card .like {
+	position: absolute;
+	top: 14px;
+	right: 14px;
+	background: #000;
+	padding: 6px 10px;
+	border-radius: 12px;
+	font-size: 12px;
 }
 
-.timer {
-    position: absolute;
-    bottom: 130px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #1e5bff;
-    padding: 6px 14px;
-    border-radius: 14px;
-    font-size: 12px;
-    font-weight: 600;
+/* Таймер */
+.container .auction-row .card .timer {
+	position: absolute;
+	bottom: 130px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #1e5bff;
+	padding: 6px 14px;
+	border-radius: 14px;
+	font-size: 12px;
+	font-weight: 600;
 }
 
-.card h3 {
-    font-size: 14px;
-    margin-bottom: 10px;
+/* Заголовок карточки */
+.container .auction-row .card h3 {
+	font-size: 14px;
+	margin-bottom: 10px;
 }
 
-.meta {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 12px;
-    opacity: 0.9;
-    padding: 2px 4px;
-    margin-bottom: 6px;
+/* Метаданные */
+.container .auction-row .card .meta {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 12px;
+	opacity: 0.9;
+	padding: 2px 4px;
+	margin-bottom: 6px;
 }
 
-.price {
-    font-weight: 700;
-    font-size: 14px;
+/* Цена */
+.container .auction-row .card .price {
+	font-weight: 700;
+	font-size: 14px;
 }
 
-.badge {
-    background: #6c63ff;
-    padding: 4px 10px;
-    border-radius: 10px;
-    font-size: 11px;
+/* Бейдж */
+.container .auction-row .card .badge {
+	background: #6c63ff;
+	padding: 4px 10px;
+	object-fit: cover;
+	border-radius: 10px;
+	font-size: 11px;
 }
 
-.bestseller-row {
-    display: flex;
-    gap: 22px;
-    overflow-x: auto;
-    padding-bottom: 10px;
+/* Ряд бестселлеров */
+.container .bestseller-row {
+	display: flex;
+	gap: 22px;
+	overflow-x: auto;
+	padding-bottom: 10px;
 }
 
-.seller {
-    min-width: 90px;
-    text-align: center;
+/* Селлер */
+.container .bestseller-row .seller {
+	min-width: 90px;
+	text-align: center;
 }
 
-.seller img {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    margin-bottom: 8px;
+/* Фото селлера */
+.container .bestseller-row .seller img {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	margin-bottom: 8px;
 }
 
-.seller h4 {
-    font-size: 13px;
-    font-weight: 600;
+/* Имя селлера */
+.container .bestseller-row .seller h4 {
+	font-size: 13px;
+	font-weight: 600;
 }
 
-.seller span {
-    font-size: 11px;
-    opacity: 0.7;
+/* Общая сумма ETH */
+.container .bestseller-row .seller span {
+	font-size: 11px;
+	opacity: 0.7;
 }
