@@ -1,0 +1,56 @@
+#header {
+    color: white;
+
+    .headerinner {
+        margin: 0 -20px;
+
+        img {
+            width: 120px;
+        }
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .headerlogo {
+            display: flex;
+            justify-content: flex-start;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        a {
+            color: white;
+        }
+
+        .search {
+            color: white;
+            font-size: 20px;
+            align-items: center;
+            display: flex;
+        }
+
+        button {
+            border: solid 2px rgb(42, 2, 74);
+            color: white;
+            border-radius: 25px;
+            width: 150px;
+            height: 50px;
+            transition: 0.7s ease-in-out;
+
+        }
+
+        button:hover {
+            background: rgba(104, 27, 167, 0.5); 
+            cursor: pointer;
+            transform: scale(1.25);
+        }
+    }
+}
+
